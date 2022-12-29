@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping
 public class RootController {
 
-    @PostMapping
+    @PostMapping("/")
     public ResponseEntity<?> rootControl(
     ) {
         return ResponseEntity.ok(
